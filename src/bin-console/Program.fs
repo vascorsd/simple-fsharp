@@ -1,2 +1,10 @@
-﻿// For more information see https://aka.ms/fsharp-console-apps
+open lib.Say
+
 printfn "Hello from F#"
+(hello "Cain")
+
+[<EntryPoint>]
+let main args =
+    printfn "Arguments: %A" args
+
+    0
